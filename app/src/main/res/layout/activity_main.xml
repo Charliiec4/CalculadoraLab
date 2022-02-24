@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/proba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Proba"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/txt_Mat1_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/proba"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <EditText
+        android:id="@+id/txt_Mat1_P2"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="19dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat1_P1"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <EditText
+        android:id="@+id/txt_Mat1_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat1_P2"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/fisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="FisicaIV"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proba"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat2_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/fisica"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat1_P1" />
+
+    <EditText
+        android:id="@+id/txt_Mat2_P2"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat2_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat1_P2" />
+
+    <EditText
+        android:id="@+id/txt_Mat2_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat2_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat1_P3" />
+
+    <TextView
+        android:id="@+id/quimica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="QuimicaIV"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fisica" />
+
+    <EditText
+        android:id="@+id/txt_Mat3_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/quimica"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat2_P1" />
+
+    <EditText
+        android:id="@+id/txt_Mat3_P2"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat3_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat2_P2" />
+
+    <EditText
+        android:id="@+id/txt_Mat3_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat3_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat2_P3" />
+
+    <TextView
+        android:id="@+id/ingles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="InglesVI"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quimica" />
+
+    <EditText
+        android:id="@+id/txt_Mat4_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingles"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat3_P1" />
+
+    <EditText
+        android:id="@+id/txt_Mat4_P2"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat4_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat3_P2" />
+
+    <EditText
+        android:id="@+id/txt_Mat4_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat4_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat3_P3" />
+
+    <TextView
+        android:id="@+id/ojp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Orientación"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingles" />
+
+    <EditText
+        android:id="@+id/txt_Mat5_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ojp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat4_P1" />
+
+    <EditText
+        android:id="@+id/txt_Mat5_P2"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat5_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat4_P2" />
+
+    <EditText
+        android:id="@+id/txt_Mat5_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat5_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat4_P3" />
+
+    <EditText
+        android:id="@+id/txt_Mat6_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat6_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Métodos"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ojp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat6_P2"
+        android:layout_width="59dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat7_P2"
+        android:layout_width="59dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="SoporteS"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat7_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat7_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat8_P2"
+        android:layout_width="59dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat8_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat8_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/isb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="SoftwareB"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ss"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat9_P2"
+        android:layout_width="59dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lpti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="LPTI IV"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isb"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat9_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat9_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat10_P1"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat10_P3"
+        android:layout_width="58dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P3"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/pi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Proyecto I"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lpti"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_Mat10_P2"
+        android:layout_width="59dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_Mat6_P1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat5_P2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPromediar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Promediar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat10_P2" />
+
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="20dp"
+        android:text="Promedio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat10_P2" />
+
+    <TextView
+        android:id="@+id/p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="20dp"
+        android:text="Promedio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat10_P1" />
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Promedio"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mat10_P3"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <TextView
+        android:id="@+id/textViewG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:text="Promedio Total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p3" />
+
+    <TextView
+        android:id="@+id/pTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="_________________"
+        app:layout_constraintStart_toEndOf="@+id/textViewG"
+        app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
