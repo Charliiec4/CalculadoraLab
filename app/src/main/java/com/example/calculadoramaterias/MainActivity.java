@@ -118,16 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
                 double ptotal = (promPar1+promPar2+promPar3)/3;
 
-                proba.setText(String.valueOf(promMat1));
-                fisica.setText(String.valueOf(promMat2));
-                quimica.setText(String.valueOf(promMat3));
-                ingles.setText(String.valueOf(promMat4));
-                ojp.setText(String.valueOf(promMat5));
-                map.setText(String.valueOf(promMat6));
-                ss.setText(String.valueOf(promMat7));
-                isb.setText(String.valueOf(promMat8));
-                lpti.setText(String.valueOf(promMat9));
-                pi.setText(String.valueOf(promMat10));
+
                 pTotal.setText(String.valueOf(ptotal));
                 par1.setText(String.valueOf(promPar1));
                 par2.setText(String.valueOf(promPar2));
